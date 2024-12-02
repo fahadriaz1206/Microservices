@@ -8,7 +8,7 @@ pipeline {
         IMAGE_TAG = 'latest'  // or you can use a dynamic tag (e.g., ${GIT_COMMIT})
     }
 
-    stages 
+    stages {
         stage('Build & Tag Docker Image') {
             steps {
                 script {
